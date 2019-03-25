@@ -1,46 +1,6 @@
-.. MWay documentation master file, created by
-   sphinx-quickstart on Sun Mar 24 16:29:32 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. _data:
 
-MyWay Project documentation
-***************************
-
-
-This is a Python Project who makes the shortest path between two Parisian Subway station.
-
-
-Introduction Python Project
-===========================
-
-Guideline:
-==========
-
-.. toctree::
-   :caption: Data
-   :maxdepth 2
-
-   data
-
-.. toctree::
-   :caption: Functions
-   :maxdepth: 2
-
-   functions
-
-.. toctree::
-   :caption: Project classes
-   :maxdepth: 2
-
-   project_classes
-
-.. toctree::
-   :caption: Shortest path
-   :maxdepth: 2
-
-   shortest_path
-
-
+====
 Data
 ====
 
@@ -87,13 +47,3 @@ We decided to merge all the file in a great file named METRO, it contains line *
             calendar[i] = pd.read_csv(dossier+i+'/calendar.txt', header = 0,usecols=['service_id'])
             stop_times[i] = pd.read_csv(dossier+i+'/stop_times.txt', header = 0, usecols=['trip_id','departure_time','stop_id','stop_sequence'])
             trips[i] = pd.read_csv(dossier+i+'/trips.txt', header = 0,usecols=['route_id','service_id','trip_id','direction_id'])
-
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
